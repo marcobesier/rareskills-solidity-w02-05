@@ -10,7 +10,7 @@ import "@openzeppelin/contracts@5.0.0/token/ERC721/extensions/ERC721Enumerable.s
  * ShimmerSea Gaming Card Collection. The cards and their metadata are stored on IPFS.
  */
 contract EnumerableNFT is ERC721Enumerable {
-    uint256 public constant MAX_SUPPLY = 20;
+    uint256 public constant MAX_SUPPLY = 100;
     string public constant BASE_URI = "ipfs://bafybeih7uybsi4mcton6dlwxhn44ppi5fbzmtucmyxvrcf7bjnow7fp2vu/";
 
     constructor() ERC721("EnumerableNFT", "ENFT") {}

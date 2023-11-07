@@ -1,6 +1,13 @@
-# EnumerableNFT
+# Enumerable NFTs
 
-This contract implements a simple NFT collection with 20 items. The NFTs point to the first 20 gaming cards of the [Dark Mythos ShimmerSea Gaming Card Collection](https://explorer.evm.shimmer.network/token/0x8B3c2664bB73BD57133418E872Fd0f7DAaE8792c). The cards and their metadata are stored on IPFS.
+This repository contains two contracts that implement an enumerable NFT collection.
+
+1. `EnumerableNFT.sol`
+2. `EnumerableNFTPrime.sol`
+
+Both contracts implement a simple NFT collection with 100 items. The NFTs point to the first 100 gaming cards of the [Dark Mythos ShimmerSea Gaming Card Collection](https://explorer.evm.shimmer.network/token/0x8B3c2664bB73BD57133418E872Fd0f7DAaE8792c). The cards and their metadata are stored on IPFS.
+The only difference between the two contracts is that `EnumerableNFTPrime.sol` contains an additional function which accepts an address and returns how many NFTs are
+owned by that address which have tokenIDs that are prime numbers.
 
 ## Setup
 

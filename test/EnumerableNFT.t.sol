@@ -19,7 +19,7 @@ contract EnumerableNFTTest is Test {
     }
 
     function test_MaxSupplyReached() public {
-        for (uint256 i = 1; i <= 20; i++) {
+        for (uint256 i = 1; i <= 100; i++) {
             enumerableNFT.mint();
         }
         vm.expectRevert("Maximum supply reached");
